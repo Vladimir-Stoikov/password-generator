@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #1db9c3;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  background: #c32bad;
+  color: #f56fad;
+  width: 400px;
+  height: 585px;
+  padding: 2rem 2.2rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(168, 23, 187, 0.2);
+}
+
+h2 {
+  color: #fff;
+  border: 3px solid #f56fad;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  margin: 0 0 40px;
+}
+
+.result-container {
+  position: relative;
+  background-color: #7027a0;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 10px;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.result-container .btn {
+  border: none;
+  border-radius: 4px;
+  background-color: #c32bad;
+  padding: 5px 9px;
+  color: #fff;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 7px;
+  right: 12px;
+}
+
+.settings {
+  position: relative;
+}
+
+.setting {
+  margin: 15px 0;
+  padding: 5px 0 5px 10px;
+  background-color: #7027a0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(168, 23, 187, 0.2);
+}
+
+.setting input#lenght {
+  background-color: #c32bad;
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 15px;
+  width: 45px;
+  padding: 0 5px;
+  margin-top: 1px;
+  border-radius: 5px;
+}
+
+.setting input {
+  position: absolute;
+  right: 5%;
+}
+
+.settings .genBtn {
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 10px 0;
+  margin-top: 7px;
+  border: none;
+  border-radius: 10px;
+  color: #7027a0;
+  width: 100%;
+  box-shadow: 0 4px 5px rgba(168, 23, 187, 0.8);
+}
+
+.settings .genBtn:active {
+  transform: scale(0.98);
+}
+
+.settings .genBtn:hover {
+  background-color: #1db9c3;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
