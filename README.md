@@ -1,1 +1,3 @@
-# password-generator
+# Password Generator
+## Learning project
+### HTML CSS JS
