@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #1db9c3;
+  background: #f5e8c7;
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
@@ -17,18 +17,18 @@ body {
 }
 
 .container {
-  background: #c32bad;
-  color: #f56fad;
+  background: #deba9d;
+  color: #ffffff;
   width: 400px;
   height: 585px;
   padding: 2rem 2.2rem;
   border-radius: 20px;
-  box-shadow: 0 2px 5px rgba(168, 23, 187, 0.2);
+  box-shadow: 0 4px 5px rgba(158, 119, 119, 0.4);
 }
 
 h2 {
   color: #fff;
-  border: 3px solid #f56fad;
+  border: 5px solid #6f4c5b;
   font-size: 2.5rem;
   line-height: 1.1;
   text-align: center;
@@ -40,7 +40,7 @@ h2 {
 
 .result-container {
   position: relative;
-  background-color: #7027a0;
+  background-color: #9e7777;
   color: #fff;
   font-size: 18px;
   padding: 12px 10px;
@@ -51,9 +51,9 @@ h2 {
 .result-container .btn {
   border: none;
   border-radius: 4px;
-  background-color: #c32bad;
+  background-color: #f9d5a7;
   padding: 5px 9px;
-  color: #fff;
+  color: #6f4c5b;
   font-size: 1.3rem;
   position: absolute;
   top: 7px;
@@ -67,13 +67,14 @@ h2 {
 .setting {
   margin: 15px 0;
   padding: 5px 0 5px 10px;
-  background-color: #7027a0;
+  background-color: #fef1e6;
+  color: #9e7777;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(168, 23, 187, 0.2);
+  box-shadow: 0 4px 5px rgba(158, 119, 119, 0.2);
 }
 
 .setting input#lenght {
-  background-color: #c32bad;
+  background-color: #9e7777;
   color: #fff;
   border: none;
   font-family: inherit;
@@ -97,9 +98,9 @@ h2 {
   margin-top: 7px;
   border: none;
   border-radius: 10px;
-  color: #7027a0;
+  color: #6f4c5b;
   width: 100%;
-  box-shadow: 0 4px 5px rgba(168, 23, 187, 0.8);
+  box-shadow: 0 4px 5px rgba(158, 119, 119, 0.4);
 }
 
 .settings .genBtn:active {
@@ -107,7 +108,63 @@ h2 {
 }
 
 .settings .genBtn:hover {
-  background-color: #1db9c3;
+  background-color: #6f4c5b;
   color: #fff;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle {
+  visibility: hidden;
+}
+
+.settings label.label {
+  position: absolute;
+  right: 18px;
+  margin-top: 1px;
+  border-radius: 11px;
+  background-color: #9e7777;
+  width: 40px;
+  height: 22px;
+}
+
+.ball {
+  background-color: #f5e8c7;
+  margin-top: 2px;
+  margin-left: 2px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: slideOff 0.2s ease-out forwards;
+}
+
+.toggle:checked + .label .ball {
+  animation: slideOn 0.2s ease-out forwards;
+}
+
+@keyframes slideOn {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+
+  50% {
+    transform: translateX(9px) scale(1.3);
+  }
+
+  100% {
+    transform: translateX(18px) scale(1);
+  }
+}
+
+@keyframes slideOff {
+  0% {
+    transform: translateX(18px) scale(1);
+  }
+
+  50% {
+    transform: translateX(9px) scale(1.3);
+  }
+
+  100% {
+    transform: translateX(0) scale(1);
+  }
 }
